@@ -10,14 +10,6 @@ RUN apt-get install -y software-properties-common
 RUN apt-get install -y git  sudo mininet
 RUN mn --version
 
-#RUN git clone git://github.com/mininet/mininet && \
-#cd mininet  && \
-#git tag && \
-#git checkout -b 2.2.1 2.2.1  && \
-#cd .. 
-#no | mininet/util/install.sh -a && \
-#echo 'hey' && \
-#mn --version
 
 RUN add-apt-repository ppa:deadsnakes/ppa
 RUN apt-get update
